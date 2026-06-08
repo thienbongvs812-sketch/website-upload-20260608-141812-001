@@ -1,0 +1,17 @@
+国产好剧纯静态电影网站
+
+入口文件：index.html
+影片详情页数量：2000
+分类页数量：8
+播放源：已从上传的原网站 JS 中提取 20 个 HLS m3u8 源，并循环绑定到详情页播放器。
+海报规则：页面已按要求引用网站根目录 1.jpg 到 150.jpg；部署时将这些图片放在 index.html 同级目录即可。
+部署方式：将本目录所有文件上传到任意静态服务器或对象存储空间。
+
+目录说明：
+- assets/css/site.css：生成的响应式样式。
+- assets/css/original-theme.css：根据上传 CSS 格式化后的原主题样式。
+- assets/js/site.js：导航、轮播、筛选和搜索交互。
+- assets/js/player.js：HLS 播放器初始化逻辑。
+- assets/js/search-data.js：站内搜索索引。
+- videos/：所有影片详情页。
+- category/：独立分类页。

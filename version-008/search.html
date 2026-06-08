@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片 - 手机影视网</title>
+  <meta name="description" content="手机影视网搜索页，支持按片名、年份、地区、类型和标签查找影片。">
+  <meta name="keywords" content="国产电视剧免费在线观看,高清全集热播剧,手机影视网,国产,视频,免费,在线观看,高清,影视大全">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="index.html" aria-label="手机影视网">
+      <span class="brand-mark">▶</span>
+      <span class="brand-text">手机影视网</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="categories.html">分类</a>
+      <a href="rank.html">热播榜</a>
+      <a href="search.html">搜索</a>
+    </nav>
+    <form class="search-form" action="search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影视作品..." aria-label="搜索影视作品">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+  </div>
+  <nav class="mobile-nav" aria-label="移动导航">
+    <a href="index.html">首页</a>
+    <a href="categories.html">分类</a>
+    <a href="rank.html">热播榜</a>
+    <a href="search.html">搜索</a>
+  </nav>
+</header>
+<main>
+<section class="page-hero slim-hero">
+  <div class="container">
+    <p class="eyebrow">影片搜索</p>
+    <h1>搜索影视作品</h1>
+    <p>可按片名、类型、地区、年份或标签检索影片。</p>
+    <form class="wide-search search-page-form" action="search.html" method="get">
+      <input id="searchInput" type="search" name="q" placeholder="输入关键词" aria-label="搜索关键词">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+<section class="container content-section">
+  <div class="section-head">
+    <div>
+      <h2 id="searchTitle">搜索结果</h2>
+      <p id="searchSummary">输入关键词后显示匹配影片。</p>
+    </div>
+  </div>
+  <div id="searchResults" class="movie-grid full-grid"></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="index.html">手机影视网</a>
+      <p>专注于提供国产电视剧的免费在线观看服务，包含当下热播剧集及经典剧作的高清全集资源，更新速度快画质清晰。</p>
+    </div>
+    <div>
+      <strong>热门入口</strong>
+      <a href="categories.html">全部分类</a>
+      <a href="rank.html">热播榜单</a>
+      <a href="search.html">影片搜索</a>
+    </div>
+    <div>
+      <strong>精选频道</strong>
+      <a href="category/hot-series.html">热播剧集</a>
+      <a href="category/hd-cinema.html">高清电影</a>
+      <a href="category/latest-library.html">最新收录</a>
+    </div>
+  </div>
+  <div class="container copyright">© 2026 手机影视网</div>
+</footer>
+  <script src="assets/search-index.js"></script>
+  <script src="assets/site.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+</body>
+</html>
